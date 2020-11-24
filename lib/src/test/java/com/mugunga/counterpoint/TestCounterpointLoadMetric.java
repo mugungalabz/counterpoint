@@ -6,10 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import com.mugunga.counterpoint.CSVWriter;
-import com.mugunga.counterpoint.CounterPointStats;
 import com.mugunga.musicmodels.Mode;
 
 
@@ -30,7 +29,7 @@ class TestCounterpointLoadMetric {
 	 * 
 	 */
 	
-	@Test
+	@Disabled
 	void phyrgianLoadTest() {
 		int baseMelodyCount = 1000;
 		FuxianCounterPointLoadMetricsTest cpt = new FuxianCounterPointLoadMetricsTest(Mode.PHYRGIAN, baseMelodyCount);
@@ -47,7 +46,7 @@ class TestCounterpointLoadMetric {
 		
 	}
 	
-	@Test
+	@Disabled
 	void ionianLoadTest() {
 		int baseMelodyCount = 100;
 		FuxianCounterPointLoadMetricsTest cpt = new FuxianCounterPointLoadMetricsTest(Mode.IONIAN, baseMelodyCount);
@@ -64,7 +63,7 @@ class TestCounterpointLoadMetric {
 		
 	}
 	
-	@Test
+	@Disabled
 	void locrianLoadTest() {
 		int baseMelodyCount = 100;
 		FuxianCounterPointLoadMetricsTest cpt = new FuxianCounterPointLoadMetricsTest(Mode.LOCRIAN, baseMelodyCount);
@@ -82,6 +81,7 @@ class TestCounterpointLoadMetric {
 	}
 	
 	@Test
+	@Disabled
 	void massLoadTest() {
 		int baseMelodyCount = 100;
 		ArrayList<String> csvStats = new ArrayList<String>();

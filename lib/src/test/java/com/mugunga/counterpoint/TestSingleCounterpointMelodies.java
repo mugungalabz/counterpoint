@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.mugunga.musicmodels.Mode;
@@ -34,6 +35,7 @@ class TestSingleCounterpointMelodies {
 	 * there is no melodic movement
 	 */
 	@Test
+	@Disabled
 	void unisonOctaveViolationTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -50,6 +52,7 @@ class TestSingleCounterpointMelodies {
 	
 	//TODO should not have 3 steps of parallel motion
 	@Test
+	@Disabled
 	void parallelMotionViolationTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -87,7 +90,7 @@ class TestSingleCounterpointMelodies {
 		assertFalse(cpt.validCantusFirmus());
 	}
 	
-	@Test
+	@Disabled
 	void andrewStevensonsAeolianMelodicTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -101,7 +104,7 @@ class TestSingleCounterpointMelodies {
 		assertTrue(cpt.validFirstSpecies());
 	}
 	
-	@Test
+	@Disabled
 	void ionianClimaxBugTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -115,6 +118,7 @@ class TestSingleCounterpointMelodies {
 		assertTrue(cpt.validFirstSpecies());
 	}
 	
+	@Disabled
 	@Test
 	void leapCheckTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
@@ -140,7 +144,7 @@ class TestSingleCounterpointMelodies {
 	/*
 	 * Need to add a fail code to the Melody Test so we can verify that it failed for the reason we thought it would
 	 */
-	@Test
+	@Disabled
 	void aeolianVoiceCrossingTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -156,6 +160,7 @@ class TestSingleCounterpointMelodies {
 	}
 	
 	@Test
+	@Disabled
 	void weirdAeolianTest() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -182,7 +187,7 @@ class TestSingleCounterpointMelodies {
 		assertEquals(cpt.getFirstSpeciesCountForSingleBaseMelody(),0);
 	}
 	
-	@Test
+	@Disabled
 	void firstSpeciesCountTest002() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		
@@ -194,6 +199,7 @@ class TestSingleCounterpointMelodies {
 		assertEquals(cpt.getFirstSpeciesCountForSingleBaseMelody(),5);
 	}
 	
+	@Disabled
 	@Test
 	void firstSpeciesCountTest003() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
@@ -207,7 +213,7 @@ class TestSingleCounterpointMelodies {
 		
 	}
 	
-	@Test
+	@Disabled
 	void firstSpeciesContainsTest003() {
 		FuxianCounterPointSingleMelodyTest cpt = new FuxianCounterPointSingleMelodyTest();
 		int[] testCFMelody =   {0, 7, 6, 8, 7, 8, 9, 2, 3, 4, 3, 1, 0}; 

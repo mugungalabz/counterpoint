@@ -16,6 +16,8 @@ repositories {
     jcenter()
 }
 
+version = "0.0.1"
+
 dependencies {
     // Use JUnit Jupiter API for testing.
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
@@ -28,6 +30,12 @@ dependencies {
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.guava:guava:29.0-jre")
+    //compile(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+	compile(fileTree("libs/"))
+	//---compile(files("libs/f1.jar"[,...]))
+	//compile(file("libs/jfugue-5.0.9.jar"))
+	//implementation(files("./lib/jfugue-5.0.9.jar"))
+	//compile fileTree(dir: 'lib', include: '*.jar')
 }
 
 tasks.test {
