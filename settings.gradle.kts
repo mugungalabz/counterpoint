@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "counterpoint"
-include("counterpoint")
+include("lib")
